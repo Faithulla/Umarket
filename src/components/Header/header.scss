@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Roboto+Condensed:wght@400&display=swap');
 .h-container {
     width: 100%;
     height: 50px;
@@ -58,5 +59,25 @@
                 }
             }
         }
+    }
+    .h-bottom-bar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .h-logo{
+            font-family: 'Koulen', cursive;
+            font-family: 'Roboto Condensed', sans-serif;
+            display: flex;
+            align-items: center;
+            font-size: 30px;
+            font-weight: 600;
+            padding: 10px;
+            margin-left: 4.2vw;
+            i{
+                padding-top: 20px;
+            }
+        
+        }
+        
     }
 }

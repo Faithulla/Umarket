@@ -1,10 +1,11 @@
 // import React, { useState } from "react"
 // import { useSelector } from "react-redux"
-import { Mark, Phone } from "../assets/svg"
+import { Logo, Mark, Phone } from "../assets/svg"
 import "./header.scss"
 // import RegModal from "./RegionModal/RegModal"
 // import Rus from "../assets/Rus.png"
 import Eng from "../assets/Eng.png"
+import SearchBar from "../SearchBar/Searchbar"
 const Header = () => {
   // const [modal, setModal] = useState(false)
   // const lang = useSelector((state) => state.langSlice.lang)
@@ -37,7 +38,7 @@ const Header = () => {
             <i className='flag-icon'>
               <img src={Eng} alt='' />
             </i>
-            <select className="lang-selector">
+            <select className='lang-selector'>
               <option value='Eng'>Eng</option>
               <option value='Rus'>Rus</option>
             </select>
@@ -45,8 +46,15 @@ const Header = () => {
         </div>
       </div>
       <div className='h-bottom-bar'>
-        <div className='h-logo'></div>
-        <div className='h-searchBar'></div>
+        <div className='h-logo'>
+          <i className='logo'>
+            <Logo />
+          </i>
+          <h3>market</h3>
+        </div>
+        <div className='h-searchBar'>
+          <SearchBar/>
+        </div>
       </div>
     </div>
   )
