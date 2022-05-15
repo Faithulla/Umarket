@@ -1,10 +1,13 @@
-import React, { useState } from "react"
+// import React, { useState } from "react"
+// import { useSelector } from "react-redux"
 import { Mark, Phone } from "../assets/svg"
 import "./header.scss"
-import RegModal from "./RegionModal/RegModal"
-
+// import RegModal from "./RegionModal/RegModal"
+// import Rus from "../assets/Rus.png"
+import Eng from "../assets/Eng.png"
 const Header = () => {
-  const [modal, setModal] = useState(false)
+  // const [modal, setModal] = useState(false)
+  // const lang = useSelector((state) => state.langSlice.lang)
   return (
     <div className='h-container'>
       <div className='h-top-bar'>
@@ -15,18 +18,30 @@ const Header = () => {
         </div>
         <div className='right-side'>
           <div className='i-2'>
-            <i>
+            <i className='phone-icon'>
               <Phone />
             </i>
             <a href='+998977781708'>+998977781708</a>
           </div>
           <div className='i-2'>
-            <i onClick={() => setModal(!false)}>
+            <i className='mark-icon'>
               <Mark />
             </i>
-            {modal && <RegModal setModal={setModal} />}
+            <select>
+              <option value=''>Tashkent</option>
+              <option value='Khorezm'>Khorezm</option>
+              <option value=''>Samarkand</option>
+            </select>
           </div>
-          <div className='i-2'></div>
+          <div className='i-2'>
+            <i className='flag-icon'>
+              <img src={Eng} alt='' width={25} height={25}/>
+            </i>
+            <select>
+              <option value='Eng'>Eng</option>
+              <option value='Rus'>Rus</option>
+            </select>
+          </div>
         </div>
       </div>
       <div className='h-bottom-bar'>
