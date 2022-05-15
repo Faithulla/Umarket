@@ -35,9 +35,9 @@ const Header = () => {
           </div>
           <div className='i-2'>
             <i className='flag-icon'>
-              <img src={Eng} alt='' width={25} height={25}/>
+              <img src={Eng} alt='' />
             </i>
-            <select>
+            <select className="lang-selector">
               <option value='Eng'>Eng</option>
               <option value='Rus'>Rus</option>
             </select>
