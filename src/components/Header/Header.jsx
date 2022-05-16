@@ -14,6 +14,7 @@ import "./header.scss"
 // import Rus from "../assets/Rus.png"
 import Eng from "../assets/Eng.png"
 import SearchBar from "../SearchBar/Searchbar"
+import { Link } from "react-router-dom"
 const Header = () => {
   // const [modal, setModal] = useState(false)
   // const lang = useSelector((state) => state.langSlice.lang)
@@ -22,9 +23,15 @@ const Header = () => {
     <div className='h-container'>
       <div className='h-top-bar'>
         <div className='left-side'>
-          <div className='i-1'>Shops</div>
-          <div className='i-1'>Feedback</div>
-          <div className='i-1'>Delivery</div>
+          <div className='i-1'>
+            <Link to=''></Link>Shops
+          </div>
+          <div className='i-1'>
+            <Link to=''></Link>Feedback
+          </div>
+          <div className='i-1'>
+            <Link to=''></Link>Delivery
+          </div>
         </div>
         <div className='right-side'>
           <div className='i-2'>
@@ -55,36 +62,54 @@ const Header = () => {
         </div>
       </div>
       <div className='h-bottom-bar'>
-        <div className='h-logo'>
-          <i className='logo'>
-            <Logo />
-          </i>
-          <h3>market</h3>
-        </div>
+        <Link to='/'>
+          <div className='h-logo'>
+            <i className='logo'>
+              <Logo />
+            </i>
+            <h3>market</h3>
+          </div>
+        </Link>
+
         <div className='h-searchBar'>
           <SearchBar />
         </div>
         <div className='user-stuff'>
           <div className='Store i-3'>
-            <StoreIcon />
-            <h3>Store</h3>
+            <Link to=''>
+              <StoreIcon />
+              <h3>Store</h3>
+            </Link>
           </div>
           <div className='Favorite i-3'>
-            <FavoriteIcon />
-            <h3>Favorite</h3>
+            <Link to='favorite'>
+              <FavoriteIcon />
+              <h3>Favorite</h3>
+            </Link>
           </div>
           <div className='Compare i-3'>
-            <CompareIcon />
-            <h3>Compare</h3>
+            <Link to=''>
+              <CompareIcon />
+              <h3>Compare</h3>
+            </Link>
           </div>
           <div className='Login i-3'>
-            <LoginIcon />
-            <h3>Login</h3>
+            <Link to=''>
+              <LoginIcon />
+              <h3>Login</h3>
+            </Link>
           </div>
         </div>
       </div>
       <div className='quickSearch'>
-        
+        <div className='q-container'>
+          <Link to='' className="links">Discounts & Shares</Link>
+          <Link to='' className="links">Smartphones & Gadgets</Link>
+          <Link to='' className="links">TV & Audio</Link>
+          <Link to='' className="links">Kitchen Techs</Link>
+          <Link to='' className="links">Beauty & Health</Link>
+          <Link to='' className="links">Laptop & PC</Link>
+        </div>
       </div>
     </div>
   )
