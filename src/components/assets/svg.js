@@ -85,8 +85,8 @@ export const ImageIcon = () => {
 export const StoreIcon = () => {
   return (
     <svg
-      width='18'
-      height='18'
+      width='25'
+      height='25'
       viewBox='0 0 18 18'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'>
@@ -100,8 +100,8 @@ export const StoreIcon = () => {
 export const FavoriteIcon = () => {
   return (
     <svg
-      width='20'
-      height='18'
+      width='25'
+      height='25'
       viewBox='0 0 20 18'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'>
@@ -118,8 +118,8 @@ export const FavoriteIcon = () => {
 export const CompareIcon = () => {
   return (
     <svg
-      width='17'
-      height='14'
+      width='25'
+      height='25'
       viewBox='0 0 17 14'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'>
@@ -137,8 +137,8 @@ export const CompareIcon = () => {
 export const LoginIcon = () => {
   return (
     <svg
-      width='17'
-      height='16'
+      width='25'
+      height='25'
       viewBox='0 0 17 16'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'>

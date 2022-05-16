@@ -1,6 +1,14 @@
 // import React, { useState } from "react"
 // import { useSelector } from "react-redux"
-import { Logo, Mark, Phone } from "../assets/svg"
+import {
+  CompareIcon,
+  FavoriteIcon,
+  LoginIcon,
+  Logo,
+  Mark,
+  Phone,
+  StoreIcon,
+} from "../assets/svg"
 import "./header.scss"
 // import RegModal from "./RegionModal/RegModal"
 // import Rus from "../assets/Rus.png"
@@ -56,6 +64,27 @@ const Header = () => {
         <div className='h-searchBar'>
           <SearchBar />
         </div>
+        <div className='user-stuff'>
+          <div className='Store i-3'>
+            <StoreIcon />
+            <h3>Store</h3>
+          </div>
+          <div className='Favorite i-3'>
+            <FavoriteIcon />
+            <h3>Favorite</h3>
+          </div>
+          <div className='Compare i-3'>
+            <CompareIcon />
+            <h3>Compare</h3>
+          </div>
+          <div className='Login i-3'>
+            <LoginIcon />
+            <h3>Login</h3>
+          </div>
+        </div>
+      </div>
+      <div className='quickSearch'>
+        
       </div>
     </div>
   )
