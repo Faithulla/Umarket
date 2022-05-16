@@ -9,6 +9,7 @@ import SearchBar from "../SearchBar/Searchbar"
 const Header = () => {
   // const [modal, setModal] = useState(false)
   // const lang = useSelector((state) => state.langSlice.lang)
+
   return (
     <div className='h-container'>
       <div className='h-top-bar'>
@@ -22,7 +23,7 @@ const Header = () => {
             <i className='phone-icon'>
               <Phone />
             </i>
-            <a href='+998977781708'>+998977781708</a>
+            <a href='+998977781708'>+998 97 778-17-08</a>
           </div>
           <div className='i-2'>
             <i className='mark-icon'>
@@ -53,7 +54,7 @@ const Header = () => {
           <h3>market</h3>
         </div>
         <div className='h-searchBar'>
-          <SearchBar/>
+          <SearchBar />
         </div>
       </div>
     </div>
